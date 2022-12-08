@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;Lab5&apos; to &apos;lab5&apos;&#x0A;- Original project: &apos;2.4DSA_2D Arrays&apos;&#x0A;- Original element: &apos;2.4DSA_2D Arrays/src/Lab5&apos;&#x0A;- Renamed element: &apos;2.4DSA_2D Arrays/src/lab5&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;Lab5&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;Lab5" name="lab5" qualified="false" references="true" stamp="1666705209369" textual="false" version="1.0"/>
+</session>

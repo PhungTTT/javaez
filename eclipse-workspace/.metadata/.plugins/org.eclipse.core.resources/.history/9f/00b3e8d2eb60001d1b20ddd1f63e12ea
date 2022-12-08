@@ -1,0 +1,32 @@
+package bai3;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+public class ThuVien {
+	private List<ChiNhanhTV> dsChiNhanh;
+
+	//THis is COnstructor of ThuVien
+	public ThuVien(List<ChiNhanhTV> dsChiNhanh) {
+		this.dsChiNhanh = dsChiNhanh;
+	}
+	//THong ke: <NamXuatBan, So luong sach>
+	public HashMap<Integer, Integer> thongKe(){
+		
+		HashMap<Integer, Integer> re = new HashMap<>();
+		for(ChiNhanhTV c : dsChiNhanh) {
+			HashMap<Integer, Integer> temp = c.thongKe();
+			for(Map.Entry<Integer, Integer> e : temp.entrySet()) {
+				if(re.containsKey(e.getKey())) {
+					re.put(e.getKey(), re.get(e.getKey())+e.getValue());
+				}else {
+					re.put(e.getKey(), e.getValue());
+				}
+			}
+		}
+		return re;
+	}
+	
+}

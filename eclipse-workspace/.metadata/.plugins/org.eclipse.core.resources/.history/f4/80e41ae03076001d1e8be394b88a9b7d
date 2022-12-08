@@ -1,0 +1,25 @@
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Queue;
+import java.util.Stack;
+
+public class Quizz {
+	public static void main(String[] args) {
+		Queue<Integer> s = new LinkedList<>();
+//		System.out.println(s.element());//Exception
+		System.out.println(s.peek());//null
+//		System.out.println(s.remove());//Exception
+		System.out.println(s.poll());//null
+		HashSet <Integer> set = new HashSet();
+		set.add(1);
+		set.add(2);
+		set.add(3);
+		System.out.println(set);
+	}
+	
+}

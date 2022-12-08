@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<div id="my_div" style="background-color: yellow;"
+		 onmouseover="changeColorGreen()" onmouseleave="changeColorYellow()">
+		 <h1>Bài 3: Viết chương trình thay đổi màu của thẻ
+			div khi người dùng rê chuột vào khu vực thẻ div</h1>
+	</div>
+	<button id="my_button" onclick="hidden_div()">Ẩn/Hiện</button>
+	
+	<script>
+		function changeColorGreen() {
+			var my_div= document.getElementById("my_div");
+			my_div.style ="background-color: green;";
+		}
+		function changeColorYellow() {
+			var my_div= document.getElementById("my_div");
+			my_div.style ="background-color: yellow;";
+		}
+		var check = "hidden";
+		function hidden_div() {
+			var my_div = document.getElementById("my_div");
+			if(check=="hidden"){
+				my_div.style.display = "none";
+				check = "show";
+			}else{
+				my_div.style.display = "block";
+				check = "hidden";
+			}
+		}
+	</script>
+</body>
+</html>

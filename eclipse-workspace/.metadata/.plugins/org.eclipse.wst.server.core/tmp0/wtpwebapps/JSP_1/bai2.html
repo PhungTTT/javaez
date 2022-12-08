@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div id="my_div">
+		Nội dung ban đầu
+	</div>
+	<input type="button" id="change" value="Thay đổi" onclick="changeText()">
+	
+	<script >
+	//Cach 2:Phần này ghi dưới các thẻ html
+		change.onclick = function() {
+			var my_div = document.getElementById("my_div");
+			
+			my_div.innerHTML = "Nội dung đã thay đổi";
+		}
+	</script>
+</body>
+</html>

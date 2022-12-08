@@ -1,0 +1,20 @@
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
+
+public class Quizz {
+	public static int sum(Iterator<Integer> iter) {
+		int re =0;
+		while(iter.hasNext()) {
+			re += iter.next();
+		}
+		return re;
+	}
+	public static void main(String[] args) {
+		Integer[] arr = {1,2,3,4};
+		List<Integer> list = Arrays.asList(arr);
+		System.out.println(
+				sum(list.iterator()));
+		System.out.println(list);
+	}
+}

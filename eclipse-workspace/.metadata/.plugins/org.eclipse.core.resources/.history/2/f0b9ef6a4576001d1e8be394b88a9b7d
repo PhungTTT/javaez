@@ -1,0 +1,62 @@
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Queue;
+import java.util.Stack;
+class P {
+	private String a;
+	private int b;
+	P(String a, int b){
+		this.a = a;
+		this.b = b;
+	}
+	
+	@Override
+	public int hashCode() {
+		return a.hashCode();
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (!(obj instanceof P))
+			return false;
+		P other = (P) obj;
+		if (a == null) {
+			if (other.a != null)
+				return false;
+		} else if (!a.equals(other.a))
+			return false;
+		if (b != other.b)
+			return false;
+		return true;
+	}
+
+	@Override
+	public String toString() {
+		return "P("+a+", "+b+")";
+	}
+}
+
+public class Quizz {
+	public static void main(String[] args) {
+		HashSet<P> hash = new HashSet<>();
+		hash.add(new P("a", 0));
+		hash.add(new P("a", 0));
+		hash.add(new P("d", 1));
+		hash.add(new P("b", 2));
+		hash.add(new P("l", 3));
+		hash.add(new P("e", 4));
+		hash.add(new P("g", 5));
+		hash.add(new P("h", 6));
+		hash.add(new P("f", 7));
+		for(P i : hash)
+		System.out.println(i);
+	}
+	
+}

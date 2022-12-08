@@ -1,0 +1,16 @@
+package bai3;
+
+import java.util.Arrays;
+
+public class Test {
+	public static void main(String[] args) {
+		TacGia t1 = new TacGia("A", 1999);
+		TacGia t2 = new TacGia("D", 2000);
+		TacGia t3 = new TacGia("C", 1990);
+		TacGia t4 = new TacGia("E", 2005);
+		TacGia t5 = new TacGia("B", 2003);
+		
+		TacGia[] dsTg1 = {t1,t2,t3};
+		Sach s1 = new SachNuocNgoai(01, "Code ez", 150000, "IT", 2022,Arrays.asList(dsTg1), "USA");
+	}
+}

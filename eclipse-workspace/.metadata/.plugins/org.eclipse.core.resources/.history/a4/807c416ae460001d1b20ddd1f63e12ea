@@ -1,0 +1,14 @@
+package bai3;
+
+import java.util.List;
+
+public class ThuVien {
+	private List<ChiNhanhTV> dsChiNhanh;
+
+	//THis is COnstructor of ThuVien
+	public ThuVien(List<ChiNhanhTV> dsChiNhanh) {
+		this.dsChiNhanh = dsChiNhanh;
+	}
+	
+	
+}

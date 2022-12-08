@@ -1,0 +1,9 @@
+INDEX VERSION 1.4+/home/phung/Documents/eclipse-workspace/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+361482319.index
+436409945.index
+3793901911.index
+1653405913.index
+2671617762.index
+1205253709.index
+2357369333.index
+3668161486.index

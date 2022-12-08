@@ -1,0 +1,22 @@
+package lambda_expressions;
+
+interface Addable{
+	int addition(int a, int b);
+}
+
+class AddableImp implements Addable{
+
+	@Override
+	public int addition(int a, int b) {
+		return (a+b);
+	}
+	
+}
+
+public class Ex2 {
+	public static void main(String[] args) {
+		//
+		Addable addition = (int a,int b) -> (a+b);
+		
+	}
+}

@@ -1,0 +1,31 @@
+package bai3;
+
+import java.util.HashSet;
+import java.util.List;
+
+public abstract class Sach {
+	protected int maSo;
+	protected String tieuDe;
+	protected double gia;
+	protected String theLoai;
+	protected int namXuatBan;
+	protected List<TacGia> dsTacGia;
+	/**
+	 * @param maSo
+	 * @param tieuDe
+	 * @param gia
+	 * @param theLoai
+	 * @param namXuatBan
+	 * @param dsTacGia
+	 */
+	public Sach(int maSo, String tieuDe, double gia, String theLoai, int namXuatBan, List<TacGia> dsTacGia) {
+		this.maSo = maSo;
+		this.tieuDe = tieuDe;
+		this.gia = gia;
+		this.theLoai = theLoai;
+		this.namXuatBan = namXuatBan;
+		this.dsTacGia = dsTacGia;
+	}
+	//Kiem tra co phai la sachNuocNgoai
+	public abstract boolean checkSachNuocNgoai();
+}
